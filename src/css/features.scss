@@ -1,0 +1,22 @@
+.features__section {
+    justify-content: center;
+    min-height: 400px;
+    background-color: #fff;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.features__items {
+    margin-top: 20px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.features__item {
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}

@@ -1,0 +1,20 @@
+.constructor__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.constructor__card {
+    cursor: pointer;
+    border: 0.25em solid transparent;
+    border-radius: 10%;
+    transition: all 0.2s ease-out;
+
+    &:hover,&.selected {
+        border-color: $primary;
+    }
+
+    &:not(:first-child) {
+        margin-left: 1rem;
+    }
+}
