@@ -22,7 +22,7 @@ import Constructor from '@/layouts/Constructor.vue'
                 Laudantium, nulla aut iure libero maiores culpa, recusandae minus provident, id odit quos.
                 Vero eum inventore consequuntur vitae a harum ex accusamus.
             </p>
-            <q-btn class="greeting__btn" color="primary" rounded no-caps>Заказать</q-btn>
+            <q-btn class="greeting__btn" href="#constructor" color="primary" rounded no-caps>Заказать</q-btn>
             <div class="row greeting__achieves">
                 <div class="column greeting__achieves-text" style="height: 150px">
                     <span class="text-bold">5000 +</span>
@@ -104,7 +104,7 @@ import Constructor from '@/layouts/Constructor.vue'
             </p>
         </div>
     </section>
-    <section class="constructor__section">
+    <section class="constructor__section" id="constructor">
         <Constructor />
     </section>
 </template>

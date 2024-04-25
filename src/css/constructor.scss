@@ -4,11 +4,34 @@
     background-color: #fff;
 }
 
+.constructor__choices {
+    h5 {    
+        margin-bottom: 1rem;
+
+        &:not(:first-child) {
+            margin-top: 1.2rem;
+        }
+    }
+}
+
 .constructor__card {
+    width: 150px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: 0.25em solid transparent;
     border-radius: 10%;
     transition: all 0.2s ease-out;
+
+    &:first-child {
+        margin-left: 5px;
+    }
+
+    &:last-child {
+        margin-right: 5px;
+    }
 
     &:hover,&.selected {
         border-color: $primary;
@@ -16,5 +39,9 @@
 
     &:not(:first-child) {
         margin-left: 1rem;
+    }
+
+    &_img {
+        width: 100px;
     }
 }
