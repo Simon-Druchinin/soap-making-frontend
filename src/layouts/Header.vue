@@ -11,7 +11,7 @@
         <q-toolbar-title class="text-h5">Мылыч</q-toolbar-title>
         
         <nav>
-            <RouterLink to="/">Главная</RouterLink>
+            <a href="#greeting">Главная</a>
             <a href="#about">О нас</a>
         </nav>
         </q-toolbar>

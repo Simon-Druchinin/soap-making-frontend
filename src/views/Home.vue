@@ -10,7 +10,7 @@ import Constructor from '@/layouts/Constructor.vue'
 
 
 <template>
-    <section class="row greeting__section">
+    <section class="row greeting__section" id="greeting">
         <div class="col greeting__left">
             <h5 class="greeting__title-above">Добро пожаловать <span class="text-primary">к Кате</span></h5>
             <h3 class="greeting__title-main">Где <span class="text-primary">мыло</span> превращается в искусство.</h3> 

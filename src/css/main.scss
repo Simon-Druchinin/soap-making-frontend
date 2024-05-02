@@ -7,10 +7,6 @@
     }
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 ::-webkit-scrollbar {
     height: 12px;
     width: 14px;
@@ -48,3 +44,7 @@ html {
     }
 }
 
+.q-layout {
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
