@@ -10,7 +10,7 @@ import Footer from '@/layouts/Footer.vue'
 
 
 <template>
-  <q-layout view="lHh lpr lFf" style="height: 100vh" class="shadow-2 rounded-borders">
+  <q-layout view="lHh lpr lFf" style="height: 100vh;overflow-y:scroll;-webkit-overflow-scrolling:touch" class="shadow-2 rounded-borders">
     <Header />
     <q-page-container class="bg-gradient">
       <RouterView />

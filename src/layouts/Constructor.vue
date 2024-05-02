@@ -10,6 +10,8 @@ import raspberryImage from "@/assets/raspberry.png"
 import strawberryImage from "@/assets/strawberry.png"
 import appleImage from "@/assets/apple.png"
 import mangoImage from "@/assets/mango.png"
+import ColorCard from '@/components/ColorCard.vue'
+import FlavourCard from '@/components/FlavourCard.vue'
 
 const thumbStyle = {
     right: '4px',
@@ -21,6 +23,7 @@ const thumbStyle = {
 const barStyle = {opacity: 0}
 
 const form = ref({"flavour": null, "color": null})
+const alert = ref(false)
 
 const flavours = [
     {"id": 1, "name": "Вишня", "image": cherryImage},
@@ -50,19 +53,7 @@ const colors = [
             style="height: 180px; width: 100vw; max-width: 80vw;"
         >
             <div class="row no-wrap flex-center constructor__flavours">
-                <q-card
-                    @click="form.flavour = flavour.id"
-                    class="constructor__card"
-                    :class="{ 'selected': form.flavour === flavour.id }"
-                    v-for="flavour in flavours"
-                >
-                    <q-card-section>
-                        <div class="column">
-                            <img class="constructor__card_img" :src="flavour.image" :alt="flavour.name" :key="flavour.id">
-                            <span class="text-center">{{  flavour.name  }}</span>
-                        </div>
-                    </q-card-section>
-                </q-card>
+                <FlavourCard :form :flavour v-for="flavour in flavours"/>
             </div>
         </q-scroll-area>
 
@@ -72,21 +63,38 @@ const colors = [
             :bar-style="barStyle"
             style="height: 180px; width: 100vw; max-width: 80vw;"
         >
-        <div class="row no-wrap flex-center constructor__colors">
-            <q-card
-                @click="form.color = color.id"
-                class="constructor__card"
-                :class="{ 'selected': form.color === color.id }"
-                v-for="color in colors"
-            >
+            <div class="row no-wrap flex-center constructor__colors">
+                <ColorCard :form :color v-for="color in colors"/>
+            </div>
+        </q-scroll-area>
+        <q-btn
+            @click="alert = true"
+            class="greeting__btn q-mt-lg"
+            color="primary"
+            rounded no-caps
+            :disable="Object.values(form).some(x => x === null)"
+        >
+            Оформить заказ
+        </q-btn>
+        
+
+        <q-dialog v-model="alert" allow-focus-outside>
+            <q-card>
                 <q-card-section>
-                    <div class="column">
-                        <q-avatar size="70px" :style="`background: ${color.color}`"></q-avatar>
-                        <span class="text-center q-pt-md">{{  color.name  }}</span>
+                <div class="text-h6">Ваш заказ</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                    <div class="row no-wrap flex-center constructor__flavours">
+                        <FlavourCard :form :flavour="flavours.find(flavour => flavour.id === form.flavour)"/>
+                        <ColorCard :form :color="colors.find(color => color.id === form.color)"/>
                     </div>
                 </q-card-section>
+
+                <q-card-actions align="right">
+                    <q-btn flat label="OK" color="primary" v-close-popup />
+                </q-card-actions>
             </q-card>
-        </div>
-        </q-scroll-area>
+        </q-dialog>
     </div>
 </template>
