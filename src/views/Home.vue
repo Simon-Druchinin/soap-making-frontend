@@ -63,31 +63,30 @@ import Constructor from '@/layouts/Constructor.vue'
                     </q-avatar>
                     <div class="text-bold">Природные ингридиенты</div>
                     <p class="text-center">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Repellat sunt, deleniti repellendus incidunt suscipit optio nemo
-                        exercitationem quasi neque ad quaerat similique dolorum odit pariatur facere voluptate tenetur aliquid ipsa!
+                        Основа произведена по современной рецептуре с использованием высококачественного сырья. 
+                        Не содержит Лаурилсульфат натрия, то есть она SLS Free.
+                        Вместо этого, довольно агрессивного компонента, она содержит более мягкие, щадящие кожу.
+                       
                     </p>
                 </div>
                 <div class="column features__item">
                     <q-avatar color="grey-3" size="80px">
                         <img class="q-pa-sm" src="@/assets/logo.svg" alt="logo">
                     </q-avatar>
-                    <div class="text-bold">Природные ингридиенты</div>
+                    <div class="text-bold">Неповторимый аромат</div>
                     <p class="text-center">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Repellat sunt, deleniti repellendus incidunt suscipit optio nemo
-                        exercitationem quasi neque ad quaerat similique dolorum odit pariatur facere voluptate tenetur aliquid ipsa!
+                        Разнообразная коллекция оттушек, которые придадут Ваши цветам приятные фруктовые, цветочные, ягодные, травяные ароматы. 
+                        В основе присутствует фиксатор аромата, который усиливает и продлевает действие аромата отдушек.
                     </p>
                 </div>
                 <div class="column features__item">
                     <q-avatar color="grey-3" size="80px">
                         <img class="q-pa-sm" src="@/assets/logo.svg" alt="logo">
                     </q-avatar>
-                    <div class="text-bold">Природные ингридиенты</div>
+                    <div class="text-bold">Оригинальность в каждом миллиметре</div>
                     <p class="text-center">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Repellat sunt, deleniti repellendus incidunt suscipit optio nemo
-                        exercitationem quasi neque ad quaerat similique dolorum odit pariatur facere voluptate tenetur aliquid ipsa!
+                        Одним из важных пунктов языка цветов является цвет. 
+                        Создайте  полностью индивидуальную работу, благодаря нашим ярким и насыщенным оттенкам.
                     </p>
                 </div>
             </div>
@@ -98,9 +97,9 @@ import Constructor from '@/layouts/Constructor.vue'
             <span class="text-bold text-primary">FEATURES</span>
             <h4 class="text-bold">О нас</h4>
             <p class="text-center about__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repellat sunt, deleniti repellendus incidunt suscipit optio nemo
-                exercitationem quasi neque ad quaerat similique dolorum odit pariatur facere voluptate tenetur aliquid ipsa!
+                Наша мыловарная-оранжерея "Мылыч" только начала свой путь, 
+                но мы с большим удовольствием продвигаем ее и дарим Вам незабываемые чувста и эмоции.
+                 Скоро в нашей оранжереи будут новые цветы: шелковые розы и благоухающие нарциссы.
             </p>
         </div>
     </section>
