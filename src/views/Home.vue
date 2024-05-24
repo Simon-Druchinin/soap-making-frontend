@@ -12,29 +12,28 @@ import Constructor from '@/layouts/Constructor.vue'
 <template>
     <section class="row greeting__section" id="greeting">
         <div class="col greeting__left">
-            <h5 class="greeting__title-above">Добро пожаловать <span class="text-primary">к Кате</span></h5>
-            <h3 class="greeting__title-main">Где <span class="text-primary">мыло</span> превращается в искусство.</h3> 
+            <h5 class="greeting__title-above">Добро пожаловать <span class="text-primary">в мыльную оранжерею,</span></h5>
+            <h3 class="greeting__title-main">Где <span class="text-primary">цветы</span> превращаются в искусство.</h3> 
             <p class="greeting__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Laudantium, nulla aut iure libero maiores culpa, recusandae minus provident, id odit quos.
-                Vero eum inventore consequuntur vitae a harum ex accusamus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Laudantium, nulla aut iure libero maiores culpa, recusandae minus provident, id odit quos.
-                Vero eum inventore consequuntur vitae a harum ex accusamus.
+                Мимолетность красоты, хрупкость жизни и цениность каждого мгновения все это несет в себе очаровательный и пьянящий пион. 
+                Действительно, ароматные и нежные лепестки пионов держатся всего несколько дней, напоминая нам, что жизнь слишком коротка, и мы должны наслаждаться каждым моментом
+                 и ценить красоту вокруг нас. Наша мыловарня может помочь Вам по-новому выразить свои чувства окружающим с помощью 
+                 хрупкого и сказочного мыла-цветка, который сможет радовать не один день.
+
             </p>
-            <q-btn class="greeting__btn" href="#constructor" color="primary" rounded no-caps>Заказать</q-btn>
+            <q-btn class="greeting__btn" href="#constructor" color="primary" rounded no-caps>Создать свой цветок</q-btn>
             <div class="row greeting__achieves">
                 <div class="column greeting__achieves-text" style="height: 150px">
                     <span class="text-bold">5000 +</span>
-                    <span class="text-bold text-grey-5">Customer</span>
+                    <span class="text-bold text-grey-5">Клиентов</span>
                 </div>
                 <div class="column greeting__achieves-text q-ml-md" style="height: 150px">
                     <span class="text-bold">10 000</span>
-                    <span class="text-bold text-grey-5">Delivery</span>
+                    <span class="text-bold text-grey-5">Доставок</span>
                 </div>
                 <div class="column greeting__achieves-text q-ml-md" style="height: 150px">
-                    <span class="text-bold">100 000</span>
-                    <span class="text-bold text-grey-5">Business</span>
+                    <span class="text-bold">1000</span>
+                    <span class="text-bold text-grey-5">Позиций</span>
                 </div>
             </div>
         </div>
@@ -61,8 +60,8 @@ import Constructor from '@/layouts/Constructor.vue'
                     <q-avatar color="grey-3" size="80px">
                         <img class="q-pa-sm" src="@/assets/logo.svg" alt="logo">
                     </q-avatar>
-                    <div class="text-bold">Природные ингридиенты</div>
-                    <p class="text-center">
+                    <div class="text-h6"><u>Природные ингридиенты</u></div>
+                    <p class="text-center text-italic">
                         Основа произведена по современной рецептуре с использованием высококачественного сырья. 
                         Не содержит Лаурилсульфат натрия, то есть она SLS Free.
                         Вместо этого, довольно агрессивного компонента, она содержит более мягкие, щадящие кожу.
@@ -73,8 +72,8 @@ import Constructor from '@/layouts/Constructor.vue'
                     <q-avatar color="grey-3" size="80px">
                         <img class="q-pa-sm" src="@/assets/logo.svg" alt="logo">
                     </q-avatar>
-                    <div class="text-bold">Неповторимый аромат</div>
-                    <p class="text-center">
+                    <div class="text-h6"><u>Неповторимый аромат</u></div>
+                    <p class="text-center text-italic">
                         Разнообразная коллекция оттушек, которые придадут Ваши цветам приятные фруктовые, цветочные, ягодные, травяные ароматы. 
                         В основе присутствует фиксатор аромата, который усиливает и продлевает действие аромата отдушек.
                     </p>
@@ -83,8 +82,8 @@ import Constructor from '@/layouts/Constructor.vue'
                     <q-avatar color="grey-3" size="80px">
                         <img class="q-pa-sm" src="@/assets/logo.svg" alt="logo">
                     </q-avatar>
-                    <div class="text-bold">Оригинальность в каждом миллиметре</div>
-                    <p class="text-center">
+                    <div class="text-h6 text-underline"><u>Оригинальность</u></div>
+                    <p class="text-center text-italic">
                         Одним из важных пунктов языка цветов является цвет. 
                         Создайте  полностью индивидуальную работу, благодаря нашим ярким и насыщенным оттенкам.
                     </p>
